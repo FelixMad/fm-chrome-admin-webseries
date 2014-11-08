@@ -1,0 +1,41 @@
+{
+	"name": "WebseriES beta 4.0",
+	"version": "4.0",
+	"manifest_version": 2,
+  "minimum_chrome_version": "29",
+	"description": "Extension para gestionar la applicación de webseries",
+	"background": {
+		"page": "background.html"
+	},
+	"icons": {
+		"16": "icon/icon16.png",
+		"48": "icon/icon48.png",
+		"128": "icon/icon128.png"
+	},
+	"permissions": [
+    "tabs",
+    "background",
+    "identity",
+    "storage",
+    "https://ssl.gstatic.com/",
+    "https://www.googleapis.com/",
+    "https://accounts.google.com/",
+    "https://apis.google.com/"
+	],
+	"oauth2": {
+    "client_id": "122289036549-b4b7nvgcqdorpjf73im7tb3knipmmikk.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive",
+      "https://www.googleapis.com/auth/drive.file",
+      "https://www.googleapis.com/auth/drive.readonly",
+      "https://www.googleapis.com/auth/drive.install"
+    ]
+  },
+	"browser_action":{
+		"default_icon": "icon/icon16.png",
+		"default_title": "WebseriES",
+		"default_popup": "popup.html"
+	},
+	"content_security_policy": "frame-src 'self' https://accounts.google.com/ https://content.googleapis.com/ ;default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self' 'unsafe-inline'; connect-src https://docs.google.com https://*.googleusercontent.com ; script-src 'self' 'unsafe-eval' https://apis.google.com/ ; object-src 'self'"
+
+}

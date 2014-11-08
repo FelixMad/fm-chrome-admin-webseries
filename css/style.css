@@ -1,0 +1,314 @@
+/*************** ELEMENTOS **************************/
+body{
+  margin: 10px;
+}
+
+.we h1{}
+.we h2{
+  margin: 0;
+}
+.we p{}
+
+.we ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.we li{
+  display: block;
+  margin-bottom: 2px;
+}
+.we a{
+  text-decoration: none;
+}
+
+.we input[type=checkbox]{}
+.we input[type=text]{}
+.we input[type=number]{}
+.we input[type=radio]{}
+
+.we button{
+  border: none;
+  border-radius: 5px;
+}
+
+.we button:active {
+  text-decoration: none;
+}
+.we button:focus {
+  -webkit-focus-ring-color auto 5px;
+}
+
+.we label{}
+
+/*****************************************/
+/*************** CLASES **************************/
+input.we-disabled,
+select.we-disabled,
+button.we-disabled
+{}
+.we-inline{
+  display: inline-block !important;
+}
+.we-block{
+  display: block !important;
+}
+.we-tableCell{
+  display: table-cell !important;
+}
+.we-vAlingMiddle{
+  vertical-align: middle !important;
+}
+.we-vAlingBottom{
+  vertical-align: bottom !important;
+}
+
+.we-alignRight{
+  text-align: right !important;
+}
+.we-alignCenter{
+  text-align: center !important;
+}
+
+.we-cursorPointer{
+  cursor: pointer !important;
+}
+
+.we-input-1digi{
+  width: 30px;
+}
+
+.we-input-2digi{
+  width: 40px;
+}
+.we-input-3digi{
+  width: 47px;
+}
+
+.we-bt-grande{
+  padding: 10px 20px;
+}
+
+.we-ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden; 
+}
+
+.we-widthMax{
+  min-width: 350px;
+}
+
+/*****************************************/
+/*************** CONJUNTO DE CLASES **************************/
+
+.we-block.we-form-group{
+  margin: 10px 0;
+}
+.we-form-group .we-tableCell> *{
+  vertical-align: middle;
+}
+.we-table li{
+  padding:5px 10px
+}
+
+.we-list ul{
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+/*****************************************/
+/*************** CLASES PERSONALIZADAS **************************/
+
+.we-section .we-form-group .we-tableCell > label:first-child{
+  width: 70px;
+}
+.we-section .we-form-group .we-tableCell > label:first-child + input[type=text],
+.we-section .we-form-group .we-tableCell > label:first-child + select
+{
+  width: 250px;
+}
+
+.we-block.we-webserie label{}
+.we-block.we-webserie input{}
+
+.we-inline.we-season{
+  width: 40px;
+}
+.we-inline.we-season label{}
+.we-inline.we-season input{}
+.we-inline.we-chapter{
+  width: 47px;
+}
+.we-inline.we-chapter label{}
+.we-inline.we-chapter input{}
+.we-inline.we-part{
+  width: 30px;
+}
+.we-inline.we-part input{}
+.we-inline.we-part label{}
+.we-inline.we-title{
+  width: 160px;
+}
+.we-inline.we-title input{
+  width: 100%;
+}
+
+.we-section-title{
+  padding: 5px 10px;
+}
+
+.we-section-content{
+  padding: 5px 10px;
+}
+.we ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+  padding: 0;
+  width: 200px;
+}
+
+.we .ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content li{
+  list-style-type: none;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden; 
+  padding: 4px 10px;
+}
+
+.we-modalWindow {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.we-modalWindow .we-content{
+  padding-top: 100px;
+}
+
+.we .ui-state-focus{
+  cursor: pointer;
+}
+  
+
+/*****************************************/
+
+
+.we-tooltip{}
+
+.we-alert{}
+
+.we-section{}
+
+
+
+.we-form-group{}
+
+
+
+.we-table{}
+
+.we-switch{}
+
+.we-icon{}
+
+
+
+.we-form-group .we-inline:first-child label{}
+
+
+/*************** CLASES DE COLOR **************************/
+.we-table li:nth-of-type(1),
+.we-table li:nth-of-type(3),
+.we-table li:nth-of-type(5)
+{
+  background: grey;
+}
+
+.we button:active {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+
+.we .we-section:nth-of-type(1) .we-section-title{
+  background: rgb(38, 199, 145);
+}
+.we .we-section:nth-of-type(2) .we-section-title{
+  background: rgb(229, 147, 49);
+}
+.we .we-section:nth-of-type(3) .we-section-title{
+  background: rgb(107, 164, 215);
+}
+
+ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+  background: white;
+  border: 1px solid;
+}
+
+.we-modalWindow {
+  background-color: rgba(0,0,0,0.8);
+  color:#fff;
+}
+
+.ui-state-focus{
+  background: grey;
+}
+
+.we-bt-aceptar{
+  color: white;
+  background: rgb(64, 165, 42);
+  border-bottom: 3px solid rgb(57, 107, 4); 
+  box-shadow: 0px 1px 3px #666666; 
+  text-shadow: 0px -1px 0px rgb(57, 107, 4);
+}
+
+label.we-disabled{
+  color:grey;
+}
+.we a{
+  color: white;
+}
+
+.we a:hover{}
+.we a:active{
+  color: white;
+  background: red;
+}
+.we a:visited{}
+.we a:focus{}
+
+/*****************************************/
+/*************** CLASES DE TAMAÃ‘O FUENTE **************************/
+
+body{
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+small,
+.we-sizesmall
+{
+  font-size: 0.7em;
+}
+.we-sizeNormal,
+.we input,
+.we input[type=button],
+.we select,
+.we button{
+  font-size: 1em;
+}
+
+.we h2,
+.we-sizeBig
+{
+  font-size: 1.3em;
+}
+
+.we h1,
+.we-sizeBigger{
+  font-size: 1.5em;
+}
+
+/*****************************************/
+

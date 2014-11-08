@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/config.js"></script>
+    <script type="text/javascript" language="javascript" src="js/conex.js"></script>
+    <script type="text/javascript" language="javascript" src="js/lang.js"></script>
+    <script type="text/javascript" language="javascript" src="js/popup.js"></script>
+  </head>
+  <body>
+    <button id="authorize-button" style="display:none">Authorize</button>
+    
+    <div class="we we-widthMax">
+      <div class="we-modalWindow" id ="we-precarga">
+        <div class="we-content we-alignCenter">
+          <div class="we-group we-block">
+            <i class="fa fa-spinner fa-spin we-block fa-5x"></i>
+            <label class="we-lang-precargando we-block we-sizeBigger"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="we-modalWindow" id="we-alert" style="display:none"><label class="we-lang-enviando"></label></div>
+
+      <div class="we-block we-form-group we-alignRight">
+        <label class="we-inline we-lang-vistaAvanzada"></label>
+        <div class="we-inline we-switch">
+          <input type="radio" id="radio1" name="radio" checked="checked"><label class="we-lang-on" for="radio1"></label>
+          <input type="radio" id="radio2" name="radio"><label class="we-lang-off" for="radio2"></label>
+        </div>
+      </div>
+
+      <ul id="we-accordion">
+        <li id="we-section-enlaceWebserie" class="we-section">
+          <a class="we-section-title we-block" href="javascript:;"><h2></h2></a>
+          <div class="we-section-content">
+            
+            <div class="we-block we-form-group we-webserie">
+              <div class="we-tableCell">
+                <label class="we-lang-webserie we-ellipsis we-inline" for="name"></label>
+                <input class="we-inline ui-widget we-vAlingMiddle" id="name" type="text">
+              </div>
+            </div>
+
+            <div class="we-block we-form-group">
+              <div class="we-tableCell">
+
+                <div class="we-inline we-season">
+                  <label class="we-lang-temporada we-disabled we-ellipsis we-block we-sizesmall" for="season"></label>
+                  <input min="0" class="we-input-2digi we-disabled we-block" id="season" type="number" disabled />
+                </div>
+                <div class="we-inline we-vAlingBottom">
+                  <label class="we-lang-x we-disabled"></label>
+                </div>
+                <div class="we-inline we-chapter">
+                  <label class="we-lang-capitulo we-disabled we-ellipsis we-block we-sizesmall" for="chapter"></label>
+                  <input min="0" class="we-input-3digi we-disabled we-block" id="chapter" type="number" disabled />
+                </div>
+
+                <div class="we-inline we-vAlingBottom">
+                  <label class="we-lang-Almohadilla we-disabled"></label>
+                </div>
+
+                <div class="we-inline we-part">
+                  <label class="we-lang-parte we-disabled we-ellipsis we-block we-sizesmall" for="part"></label>
+                  <input min="1" class="we-block we-input-1digi we-disabled" id="part" type="number" disabled />
+                </div>
+                <div class="we-inline we-vAlingBottom">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="we-inline we-title">
+                  <div class="we-block">
+                    <label class="we-lang-titulo we-disabled we-ellipsis we-block we-sizesmall" for="wsTitle"></label>
+                  </div>
+                  <div class="we-block">
+                    <input id="wsTitle" type="text" class="we-disabled" disabled />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="we-alingCenter we-block we-form-group">
+              <button class="we-lang-aceptar we-bt-aceptar we-bt-grande we-cursorPointer we-disabled" disabled></button>
+            </div>
+
+            <div id="we-list-capitulosAnteriores" class="we-block we-list" style="display:none">
+              <div class="we-block">
+                <label class="we-lang-capitulosAnteriores we-disabled"></label>
+              </div>
+              <ul></ul>
+            </div>
+          </div>
+        </li>
+        <li id="we-section-enlaceArticulo" class="we-section">
+          <a class="we-section-title we-block" href="javascript:;"><h2></h2></a>
+          <div class="we-section-content">
+
+            <div class="we-block we-form-group">
+              <div class="we-tableCell">
+                <label class="we-lang-titulo we-inline we-ellipsis" for="articTitle"></label>
+                <input class="we-inline" id="articTitle" type="text">
+              </div>
+            </div>
+
+            <div class="we-block we-form-group">
+              <div class="we-tableCell">
+                  <label for="tituloNoticia" class="we-lang-categoria we-disabled we-inline we-ellipsis" for="tipoNoticia"></label>
+                  <select id="tipoNoticia" class="we-disabled we-inline" disabled>
+                    <option value></option>
+                  </select>
+              </div>
+            </div>
+
+            <div class="we-alingCenter"><button class="we-lang-aceptar we-bt-aceptar we-cursorPointer we-bt-grande we-disabled" disabled></button></div>
+          </div>
+        </li>
+        <li id="we-section-adminWES" class="we-section" >
+          <a class="we-section-title we-block" href="javascript:;"><h2></h2></a>
+          <div class="we-section-content">
+
+            <div class="we-block we-form-group">
+              <div class="we-tableCell">
+                <label for="webserieWES" class="we-lang-webserie we-ellipsis we-inline"></label>
+                <input id="webserieWES" class="we-inline ui-widget" type="text" />
+              </div>
+            </div>
+
+            <div class="we-block we-form-group">
+              <div class="we-tableCell">
+                <label for="distribucion" class="we-inline we-ellipsis we-lang-distribucion we-disabled"></label>
+                <select id="distribucion" class="we-disabled we-inline" disabled ></select>
+              </div>
+            </div>
+
+            <div class="we-block we-form-group">
+              <div class="we-tableCell">
+                <label for="mail" class="we-inline we-lang-mail we-ellipsis we-disabled"></label>
+                <input id="mail" type="text" class="we-inline we-disabled" disabled />
+              </div>
+            </div>
+             <div class="we-block we-form-group">
+              <div class="we-tableCell">
+                <input id="wes" type="checkbox" class="we-disabled we-inline" disabled />
+                <label class="we-lang-esDeWES we-disabled we-inline we-ellipsis" for="wes"></label>
+              </div>
+            </div>
+            <div class="we-alingCenter"><button class="we-lang-aceptar we-bt-aceptar we-bt-grande we-cursorPointer we-disabled" disabled /></div>
+          </div>
+        </li>
+      </ul>
+      <input id="idW" type="hidden">
+      <input id="idD" type="hidden">
+      <input id="category" type="hidden">
+      <input id="url" type="hidden">
+      <input id="kind" type="hidden">
+      <br/>
+      <label class="we-lang-logIncorporaciones we-block"></label>
+      <ul id="logData" class="we-table"/>
+    </div>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+  </body>
+</html>

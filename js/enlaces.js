@@ -1,0 +1,1 @@
+	var enlaces = JSON.parse(localStorage.getItem("dataenlaces"));
