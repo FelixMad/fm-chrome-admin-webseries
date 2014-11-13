@@ -84,6 +84,7 @@ function cargaBlogCategorias(){
   var element = $('select#tipoNoticia');
   element.find('option').remove();
   element.append('<option/>');
+	var blogCategorias = JSON.parse(localStorage.getItem("datablogCategorias"));
   for(i in blogCategorias){element.append('<option value="'+ blogCategorias[i].label +'">'+ blogCategorias[i].label +'</option>') };
   element.change(function(){
     var str = "";

@@ -36,6 +36,6 @@
 		"default_title": "WebseriES",
 		"default_popup": "popup.html"
 	},
-	"content_security_policy": "frame-src 'self' https://accounts.google.com/ https://content.googleapis.com/ ;default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self' 'unsafe-inline'; connect-src https://docs.google.com https://*.googleusercontent.com ; script-src 'self' 'unsafe-eval' https://apis.google.com/ ; object-src 'self'"
+	"content_security_policy": "frame-src 'self' https://accounts.google.com/ https://content.googleapis.com/ ;default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self' 'unsafe-inline'; connect-src https://docs.google.com https://*.googleusercontent.com ; script-src 'self' 'unsafe-eval' https://apis.google.com ; object-src 'self' "
 
 }
