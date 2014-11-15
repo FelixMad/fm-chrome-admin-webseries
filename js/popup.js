@@ -2,9 +2,9 @@
 $(document).ready(function(){
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) { $("#url").val(tabs[0].url) });
 
-    $('#we-precarga').hide();/////////////////
+    $('#we-precarga').hide();
 
-    window['webseries'] = JSON.parse(localStorage.getItem("datawebseries"));/////////
+    window['webseries'] = JSON.parse(localStorage.getItem("datawebseries"));
 
   $("#we-accordion").accordion({collapsible: true,create: function(event,ui) {eventoTituloAcordeon()}});
   
