@@ -1,3 +1,5 @@
 js/config.js
 *.crx
 .DS_Store
+node_modules
+package.json
